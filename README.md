@@ -71,10 +71,8 @@ Any static host works. The simplest free options:
 
 ## Before going live — things to update
 
-- **Phone number.** `(555) 123-4567` is a placeholder. It appears in `index.html`
-  (top bar, hero button, contact section) and in two spots in `script.js`.
-  Search for `555` and replace everywhere, including the `tel:+1555...` links.
-- **Business hours** in the Contact section of `index.html`.
+- **Business hours** in the Contact section of `index.html` — currently
+  Monday to Friday, 9:00 AM – 5:00 PM.
 - **Service address**, if you want one listed.
 
 ## Accessibility features

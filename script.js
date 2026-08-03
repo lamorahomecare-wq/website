@@ -197,14 +197,14 @@ var FORM_ENDPOINT = 'https://formsubmit.co/ajax/' + DESTINATION_EMAIL;
           'We will contact you at <strong>' + escapeHtml(data.Email) + '</strong> or ' +
           '<strong>' + escapeHtml(data.Phone) + '</strong> within one business day.</p>' +
           '<p>If you need help sooner, please call us at ' +
-          '<a href="tel:+15551234567">(555) 123-4567</a>.</p>');
+          '<a href="tel:+19098150152">(909) 815-0152</a>.</p>');
       })
       .catch(function () {
         setStatus('error',
           '<p><strong>Sorry — we could not send your request automatically.</strong></p>' +
           '<p>Nothing you typed was lost. Please choose one of these instead:</p>' +
           '<p><a href="' + mailtoFallback(data) + '">Send it using your own email program</a>' +
-          ' &nbsp;•&nbsp; Call us at <a href="tel:+15551234567">(555) 123-4567</a>' +
+          ' &nbsp;•&nbsp; Call us at <a href="tel:+19098150152">(909) 815-0152</a>' +
           ' &nbsp;•&nbsp; Email <a href="mailto:' + DESTINATION_EMAIL + '">' + DESTINATION_EMAIL + '</a></p>');
       })
       .then(function () {
