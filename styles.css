@@ -164,26 +164,41 @@ a:hover { color: var(--blue-900); }
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
 }
-.logo img { width: 190px; }
+
+/* The logo file is a square with wide white margins — the artwork itself sits in
+   the middle third. We crop to the artwork so the bar stays short without
+   shrinking the logo. */
+.logo {
+  display: block;
+  width: 115px;
+  height: 73px;
+  overflow: hidden;
+  flex: none;
+}
+.logo img {
+  width: 211px;
+  max-width: none;
+  margin: -67px 0 0 -49px;
+}
 
 .nav ul {
   list-style: none;
   display: flex;
-  gap: .3rem;
+  gap: .2rem;
   margin: 0;
   padding: 0;
 }
 .nav a {
   display: block;
-  padding: .7rem .9rem;
+  padding: .5rem .8rem;
   text-decoration: none;
   font-weight: 700;
   color: var(--blue-900);
   border-radius: 10px;
-  font-size: .95rem;
+  font-size: .85rem;
 }
 .nav a:hover { background: var(--blue-100); }
 
@@ -560,7 +575,8 @@ select[aria-invalid="true"] { border-color: var(--danger); background: #FDF3F2; 
     border: 2px solid var(--line);
   }
   .header-inner { flex-wrap: wrap; }
-  .logo img { width: 158px; }
+  .logo { width: 96px; height: 61px; }
+  .logo img { width: 176px; margin: -55px 0 0 -41px; }
 
   .form { padding: 1.2rem; }
   .btn { width: 100%; }
