@@ -151,32 +151,32 @@
 
         <ul class="why-list">
           <li>
-            <svg class="icon check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-            <div>
-              <h3>A real person answers</h3>
-              <p>You will never be stuck in a phone tree. Every request is read and answered by our team.</p>
-            </div>
+            <span class="why-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </span>
+            <h3>A real person answers</h3>
+            <p>Every request is read and answered by our team. No phone trees.</p>
           </li>
           <li>
-            <svg class="icon check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-            <div>
-              <h3>Clear, simple explanations</h3>
-              <p>We explain your options in everyday language, with no jargon and no pressure.</p>
-            </div>
+            <span class="why-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3>Clear explanations</h3>
+            <p>Your options in everyday language, with no jargon and no pressure.</p>
           </li>
           <li>
-            <svg class="icon check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-            <div>
-              <h3>Fast responses</h3>
-              <p>Requests sent on a business day are reviewed that same day.</p>
-            </div>
+            <span class="why-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2"/></svg>
+            </span>
+            <h3>Fast responses</h3>
+            <p>Requests sent on a business day are reviewed that same day.</p>
           </li>
           <li>
-            <svg class="icon check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-            <div>
-              <h3>We come to you</h3>
-              <p>Home delivery for supplies, plus on site or virtual visits for laboratory consulting.</p>
-            </div>
+            <span class="why-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5"/><path d="M9.5 21v-6h5v6"/></svg>
+            </span>
+            <h3>We come to you</h3>
+            <p>Home delivery for supplies, plus on site or virtual lab visits.</p>
           </li>
         </ul>
       </div>
@@ -215,17 +215,17 @@
           <div class="field-row">
             <div class="field">
               <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+              <p class="help" id="email-help">For example: name@example.com</p>
               <input type="email" id="email" name="Email" autocomplete="email" required
                      aria-describedby="email-help email-error">
-              <p class="help" id="email-help">For example: name@example.com</p>
               <p class="error" id="email-error"></p>
             </div>
 
             <div class="field">
               <label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+              <p class="help" id="phone-help">For example: (555) 123-4567</p>
               <input type="tel" id="phone" name="Phone" autocomplete="tel" required
                      aria-describedby="phone-help phone-error">
-              <p class="help" id="phone-help">For example: (555) 123-4567</p>
               <p class="error" id="phone-error"></p>
             </div>
           </div>
