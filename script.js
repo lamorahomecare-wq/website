@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Lamora Home Care — site behaviour
+   Lamora Home Care: site behaviour
    1. Text size buttons (remembered between visits)
    2. Mobile menu
    3. Request form: validation + automatic email delivery
@@ -7,7 +7,7 @@
 
 /* --------------------------------------------------------------------------
    WHERE REQUESTS ARE SENT
-   FormSubmit delivers the form straight to this inbox. No account required —
+   FormSubmit delivers the form straight to this inbox. No account is required and
    the first time someone submits, FormSubmit emails this address once asking
    you to confirm. Click that link and every request after it arrives instantly.
    To change the destination address, edit the line below.
@@ -177,8 +177,8 @@ var FORM_ENDPOINT = 'https://formsubmit.co/ajax/' + DESTINATION_EMAIL;
 
     // --- Send ---
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending your request…';
-    setStatus('success', '<p>Sending your request, please wait…</p>');
+    submitBtn.textContent = 'Sending your request';
+    setStatus('success', '<p>Sending your request, please wait.</p>');
 
     fetch(FORM_ENDPOINT, {
       method: 'POST',
@@ -201,11 +201,11 @@ var FORM_ENDPOINT = 'https://formsubmit.co/ajax/' + DESTINATION_EMAIL;
       })
       .catch(function () {
         setStatus('error',
-          '<p><strong>Sorry — we could not send your request automatically.</strong></p>' +
+          '<p><strong>Sorry, we could not send your request automatically.</strong></p>' +
           '<p>Nothing you typed was lost. Please choose one of these instead:</p>' +
-          '<p><a href="' + mailtoFallback(data) + '">Send it using your own email program</a>' +
-          ' &nbsp;•&nbsp; Call us at <a href="tel:+19098150152">(909) 815-0152</a>' +
-          ' &nbsp;•&nbsp; Email <a href="mailto:' + DESTINATION_EMAIL + '">' + DESTINATION_EMAIL + '</a></p>');
+          '<p><a href="' + mailtoFallback(data) + '">Send it using your own email program</a>, ' +
+          'call us at <a href="tel:+19098150152">(909) 815-0152</a>, or email ' +
+          '<a href="mailto:' + DESTINATION_EMAIL + '">' + DESTINATION_EMAIL + '</a>.</p>');
       })
       .then(function () {
         submitBtn.disabled = false;

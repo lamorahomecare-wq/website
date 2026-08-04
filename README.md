@@ -71,8 +71,8 @@ Any static host works. The simplest free options:
 
 ## Before going live — things to update
 
-- **Business hours** in the Contact section of `index.html` — currently
-  Monday to Friday, 9:00 AM – 5:00 PM.
+- **Business hours** in the Contact section of `index.html`, currently
+  Monday to Friday, 9:00 AM to 5:00 PM.
 - **Service address**, if you want one listed.
 
 ## Accessibility features
@@ -81,9 +81,9 @@ Built for older visitors and anyone using assistive technology:
 
 - 20px base text, going up to 26px with the **Text size** buttons in the top bar
   (the choice is remembered on the next visit)
-- Large tap targets — buttons and inputs are at least 60px tall
+- Large tap targets: buttons and inputs are at least 56px tall
 - High-contrast colors that pass WCAG AA
-- Thick, always-visible focus outlines for keyboard users
+- Clear, always-visible focus rings for keyboard users
 - "Skip to main content" link
 - Labels always visible (never placeholder-only), with plain-language hints
 - Errors written in full sentences, announced to screen readers, and focus jumps
